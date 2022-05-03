@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Font Color */
+  --ft-clr-white: #fff;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: var(--ft-clr-white);
+}
