@@ -5,9 +5,45 @@
 :root {
   /* Font Color */
   --ft-clr-white: #fff;
+
+  /* Border Radius */
+  --border-radius: 3%;
 }
 
 body {
   background-color: hsl(217, 54%, 11%);
   color: var(--ft-clr-white);
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 350px;
+  padding: 30px;
+  margin: auto;
+}
+
+/* Image Box */
+.bg__box {
+  border-radius: var(--border-radius);
+  margin: auto;
+  height: 350px;
+  width: 100%;
+  /* max-width: 350px; */
+}
+
+/* Image */
+.bg__img {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: var(--border-radius);
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.text__box {
+  width: 100%;
+  margin: auto;
+  max-width: 350px;
 }
