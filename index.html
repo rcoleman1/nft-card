@@ -5,38 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
     <section class="container">
-      <div class="bg__box">
-        <img src="images/image-equilibrium.jpg" alt="" class="bg__img">
+      <div class="img__box">
+        <img src="images/image-equilibrium.jpg" alt="" class="img" />
       </div>
-      
-      <div class="text__box">
-        Equilibrium #3429
 
-        <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="text__box">
+        <h1 class="title">Equilibrium #3429</h1>
+
+        <p class="paragraph">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
 
         <div class="status__box">
-          <span>0.041ETH</span>
-          <span>3 days left</span>
+          <div class="status__item">
+            <img
+              src="images/icon-ethereum.svg"
+              alt="Ethereum icon"
+              class="status__icon"
+            />
+            <span class="status__text eth">0.041ETH</span>
+          </div>
+
+          <div class="status__item">
+            <img
+              src="images/icon-clock.svg"
+              alt="Clock icon"
+              class="status__icon"
+            />
+            <span class="status__text days">3 days left</span>
+          </div>
         </div>
 
-        <hr class="line">
+        <hr class="line" />
 
         <div class="profile__box">
-          
-          Creation of Jules Wyvern
+          <img
+            src="images/image-avatar.png"
+            alt="profile picture"
+            class="profile__img"
+          />
+          <div>
+            <span class="profile__text">Creation of </span> Jules Wyvern
+          </div>
         </div>
       </div>
     </section>
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="fm-link"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#" class="dev-name">Rodrick Coleman</a>.
     </div>
   </body>
 </html>
